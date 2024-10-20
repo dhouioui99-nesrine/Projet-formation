@@ -1,0 +1,48 @@
+<app-accc></app-accc>
+<hr> 
+<br><br>
+
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> S'inscrire </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label>Nom</label>
+                        <input type="text" class="form-control" id="firstName" [(ngModel)]="formation.nom"
+                            name="nom">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Domaine</label>
+                        <input type="text" class="form-control" id="lastName" [(ngModel)]="formation.domaine"
+                            name="domaine">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Periode </label>
+                        <input type="text" class="form-control" id="emailId" [(ngModel)]="formation.periode"
+                            name="periode">
+                    </div>
+                    <div class="form-group">
+                        <label> Prix </label>
+                        <input type="text" class="form-control" id="emailId" [(ngModel)]="formation.prix"
+                            name="prix">
+                    </div>
+                    <div class="form-group">
+                        <label> Email </label>
+                        <input type="text" class="form-control" id="emailId" [(ngModel)]="inscrit.email"
+                            name="email">
+                    </div>
+                    
+                    <br />
+                    <button class="btn btn-success" type="submit">S'inscrire</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

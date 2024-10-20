@@ -1,0 +1,32 @@
+<app-accc></app-accc>
+
+
+<div class = "row">
+    <h2> formation  List</h2>
+</div>
+<br> <br>
+<table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>  Nom</th>
+            <th> Domaine </th>
+            <th> Période </th>
+            <th> Prix </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let formation of formation" >
+            <td> {{ formation.nom }} </td>
+            <td> {{ formation.domaine }} </td>
+            <td> {{ formation.periode }} </td>
+            <td> {{ formation.prix }} </td>
+            <td>
+                <button [routerLink]="['/save', formation.id]" class = "btn btn-danger" style="margin-left: 10px">Save</button>
+                
+               
+                
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+<div class = "row">
+    <h2> contact  List</h2>
+</div>
+<br> <br>
+<table class = "table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>  Nom</th>
+            <th> email </th>
+            <th> sujet </th>
+            <th> message </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let contact of contact" >
+            <td> {{ contact.nom }} </td>
+            <td> {{ contact.email }} </td>
+            <td> {{ contact.sujet }} </td>
+            <td> {{ contact.message }} </td>
+            <td>
+                
+                
+                <button (click) = "deleteFormation(contact.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                
+            </td>
+        </tr>
+    </tbody>
+</table>
